@@ -4,7 +4,7 @@ $port = 3306;
 $socket = "";
 $user = "root";
 $password = "";
-$dbname = "users";
+$dbname = "sys";
 
 // Create a new mysqli connection
 $conn = new mysqli($host, $user, $password, $dbname, $port, $socket);
