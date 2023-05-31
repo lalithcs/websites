@@ -1,12 +1,13 @@
 <?php
-// Database connection settings
-$servername = "localhost:3306";
-$username = "thedaddy_login";
-$password = "admin@9602";
-$dbname = "thedaddy_logindetails";
+$host="localhost";
+$port=3306;
+$socket="";
+$user="root";
+$password="";
+$dbname="sys";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+	or die ('Could not connect to the database server' . mysqli_connect_error());
 
 // Check connection
 if ($conn->connect_error) {
