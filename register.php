@@ -1,11 +1,11 @@
 <?php
-$host = "localhost";
-$port = 3306;
-$user = "root";
-$password = "lalith1.";
-$dbname = "users";
+$host = 'localhost';
+$username = 'root';
+$password = 'lalith1.';
+$database = 'users';
 
-$conn = new mysqli($host, $user, $password, $dbname, $port);
+$conn = mysqli_connect($host, $username, $password, $database);
+
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
