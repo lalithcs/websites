@@ -1,12 +1,10 @@
 <?php
-$host="localhost";
-$port=3306;
-$socket="";
-$user="root";
-$password="";
-$dbname="sys";
+$host = 'localhost';
+$username = 'root';
+$password = 'your_password';
+$database = 'users'; // Replace with your actual database name
 
-$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+$conn = mysqli_connect($host, $username, $password, $database)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
 
 // Check connection
